@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4_JS</title>
+</head>
+<body>
+    <script>
+        const day = [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+        ];
+        const month = [
+            "Jan",
+            "Feb",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "Aug",
+            "Sept",
+            "Oct",
+            "Nov",
+            "Dec",
+        ];
+        function time() {
+            var currentTime = new Date();
+            var timeString = currentTime.toLocaleTimeString();
+
+            document.getElementById("dispTime").innerHTML =
+            day[currentTime.getDay()] +
+            " " +
+            month[currentTime.getMonth()] +
+            " " +
+            currentTime.getFullYear() +
+            " " +
+            currentTime;
+        }
+
+        function date() {
+            var currentDate = new Date();
+            var dateString = currentDate.toLocaleDateString();
+            document.getElementById("dispDate").innerHTML =
+            currentDate.getDate() +
+            "/" +
+            month[currentDate.getMonth()] +
+            "/" +
+            currentDate.getFullYear();
+        }
+    </script>
+
+    <button onclick="date()">Date</button><br />
+    <div id="dispDate">
+    </div>
+    <br />
+    <button onclick="time()">Time</button><br />
+    <div id="dispTime">
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3_BS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        .card {
+            width: 230px;
+            height: 260px;
+            margin: 10px; 
+            text-align: center;
+        }
+        
+        .card-header {
+            background-color: #ebebeb;
+            border-bottom: 1px solid #a4a4a4;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .btn {
+            width: 150px;
+            border-color: #007bff;
+            border-width: 2px;
+        }
+
+        .but {
+            width: 90px;
+        }
+
+        .container {
+            width: fit-content;
+        }
+
+        .no-underline {
+            text-decoration: none;
+        }
+
+        .row {
+            flex-wrap: wrap;
+        }
+
+        .display-5 {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-white border-bottom shadow">
+        <nav class="my-4 d-flex justify-content-between align-items-center">
+            <h5 class="my-0 ms-3 mr-md-auto font-weight-light">Company name</h5>    
+            <div class="d-flex">
+                <a class="p-2 text-dark no-underline" href="#">Features</a>
+                <a class="p-2 text-dark no-underline" href="#">Enterprise</a>
+                <a class="p-2 text-dark no-underline" href="#">Support</a>
+                <a class="p-2 text-dark no-underline" href="#">Pricing</a>
+                <a class="btn btn-outline-primary but" href="#">Sign up</a>
+            </div>
+        </nav>
+    </div>
+    
+    <p class="display-5 text-center">Pricing</p>
+    <p class="text-center">Quickly build an effective pricing table for your potential customerswith this <br>Bootstrap example. It's built with default Bootstrap components and utilities <br>with little customization.</p>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Free
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$0 / mo</h5>
+                        <p class="card-text">
+                            10 users included
+                            <br>
+                            2 GB of storage
+                            <br>
+                            Email support
+                            <br>
+                            Help center access
+                        </p>
+                        <a href="#" class="btn btn-white mt-auto">Sign up for free</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Pro
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$15 / mo</h5>
+                        <p class="card-text">
+                            20 users included
+                            <br>
+                            10 GB of storage
+                            <br>
+                            Priority email support
+                            <br>
+                            Help center access
+                        </p>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        Enterprise
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">$29 / mo</h5>
+                        <p class="card-text">
+                            30 users included
+                            <br>
+                            15 GB of storage
+                            <br>
+                            Phone and email support
+                            <br>
+                            Help center access
+                        </p>
+                        <a href="#" class="btn btn-primary">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-md">
+                        <img class="mb-2" src="./bs.jpeg" alt="" width="24" height="24">
+                        <p>© 2017-2018</p>
+                    </div>
+                    <div class="col-3 col-md">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted no-underline" href="#">Cool stuff</a></li>
+                            <li><a class="text-muted no-underline" href="#">Random feature</a></li>
+                            <li><a class="text-muted no-underline" href="#">Team feature</a></li>
+                            <li><a class="text-muted no-underline" href="#">Stuff for developers</a></li>
+                            <li><a class="text-muted no-underline" href="#">Another one</a></li>
+                            <li><a class="text-muted no-underline" href="#">Last time</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md">
+                        <h5>Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted no-underline" href="#">Resource</a></li>
+                            <li><a class="text-muted no-underline" href="#">Resource name</a></li>
+                            <li><a class="text-muted no-underline" href="#">Another resource</a></li>
+                            <li><a class="text-muted no-underline" href="#">Final resource</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md">
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="text-muted no-underline" href="#">Team</a></li>
+                            <li><a class="text-muted no-underline" href="#">Locations</a></li>
+                            <li><a class="text-muted no-underline" href="#">Privacy</a></li>
+                            <li><a class="text-muted no-underline" href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

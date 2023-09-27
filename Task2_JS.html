@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2_JS</title>
+</head>
+<body>
+    <script>
+        function sortString() 
+        {
+            var ip = document.getElementById("string").value;
+            var sortedString = ip.split("").sort().join("");
+            document.getElementById("result").textContent = sortedString;
+        }
+    </script>
+
+    <h1>Sort a given string</h1>
+    <input type="text" id="string" placeholder="String value" />
+    <button onclick="sortString()">Enter to sort</button>
+    <p id="result"></p>
+</body>
+</html>

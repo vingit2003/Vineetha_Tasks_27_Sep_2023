@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task7_JS</title>
+    <style>
+        #myImage {
+          position: relative;
+          left: 0;
+          transition: left 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let animationId;
+        let position = 0;
+        const step = 5; // value can be changed to adjust the speed of animation
+
+        function start() 
+        {
+            animationId = requestAnimationFrame(forward);
+        }
+
+        function forward() 
+        {
+            position += step;
+            document.getElementById("myImage").style.left = position + "px";
+
+            if (position < window.innerWidth - document.getElementById("myImage").width) 
+            {
+                animationId = requestAnimationFrame(forward);
+            } 
+            else 
+            {
+                cancelAnimationFrame(animationId);
+                animationId = requestAnimationFrame(backward);
+            }
+        }
+
+        function backward() {
+            position -= step;
+            document.getElementById("myImage").style.left = position + "px";
+
+            if (position > 0) {
+            animationId = requestAnimationFrame(moveBackward);
+            } else {
+            cancelAnimationFrame(animationId);
+            animationId = requestAnimationFrame(moveForward);
+            }
+        }
+
+        function stop() {
+            cancelAnimationFrame(animationId);
+        }
+    </script>
+
+    <img id="myImage" src="./animatedtrain.jpeg" alt="image" /><br />
+    <h1 style="color: rgb(65, 65, 155); display: flex; justify-content: center; align-items: center;">Click the following buttons to handle animations</h1>
+    
+    <div style="display: flex; justify-content: center; align-items: center">
+        <button style="margin-right: 2px" onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+    </div>
+</body>
+</html>

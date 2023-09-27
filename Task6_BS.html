@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task6_BS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff;
+        }
+  
+        .form-group label {
+            font-weight: bold;
+        }
+  
+        .form-control {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+  
+        .btn {
+            background-color: red;
+            width: 100%;
+            color: white;
+        }
+
+        .box-shadow {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+      </style>
+</head>
+<body>
+    <div class="container mt-5 box-shadow">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control border" id="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control border" id="email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control border" id="password" required />
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <select class="form-control" id="hobbies" required>
+                <option value=""></option>
+                <option value="read">Reading</option>
+                <option value="study">Studying</option>
+                <option value="walk">Walking</option>
+                <option value="sing">Singing</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
